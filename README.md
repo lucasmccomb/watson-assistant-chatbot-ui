@@ -1,5 +1,5 @@
-# Watson Assistant Node.js/React.js Chatbot UI
-A Node.js/React.js app that provides a simple chatbot user interface for the IBM Watson Assistant API that can be easily integrated into an existing web app.
+# IBM Watson Assistant Node.js/React.js Chatbot UI
+A Node.js/React.js app that provides a simple chatbot user interface for the IBM Watson Assistant API that can be integrated into an existing web app with a single script tag.
 
 ***
 
@@ -10,6 +10,7 @@ The following components are required to effectively use this repository:
 - A [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) service instance
 - A target app or website into which the chatbot will be inserted
 - A Command Line Interface (CLI)
+- An installation of the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview)
 - A text editor or Integrated Development Environment (IDE) e.g. [VS Code](https://code.visualstudio.com/)
 - An up-to-date version of [Firefox](https://www.mozilla.org/en-US/firefox/new/) or [Google Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTggc345A8KxyUcNEmc1evvkxhRQDSb8WS-FLmDQUPOyqJZL-LCsrRoCVMQQAvD_BwE&gclsrc=aw.ds&dclid=CP7z2LWAjt4CFaO6swod1zsEsw)
 
@@ -108,8 +109,9 @@ The following components are required to effectively use this repository:
 
 9.  **Push the modified repository**
 
-    1. Log into Cloud Foundry `cf login https://api.ng.bluemix.net`
-    2. From within this directory, run `cf push {your-app-name}` to push the repository up
+    1. In the CLI, login to IBM Cloud `ibmcloud login`
+    2. Select the account 
+    3. From within this directory, run `cf push {your-app-name}` to push the repository up
         - e.g. `cf push Watson-Assistant-Node-React-Chatbot`
 
 10. **The chatbot app is now deployed.**
