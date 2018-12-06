@@ -55,9 +55,9 @@ The following components are required to effectively use this repository:
     5.  Allow your app to restage -->
 
 3.  **From your CLI, clone this repository onto your local machine:** 
-    - `git clone git@github.w3ibm.bluemix.net:lemccomb-us/watson-assistant-node-react-chatbot.git`
-4.  **Navigate to the `watson-assistant-node-react-chatbot` directory**
-5.  **Open the `watson-assistant-node-react-chatbot` repository in your IDE or text editor**
+    - `git clone https://github.com/lukemccomb/watson-assistant-chatbot-ui.git`
+4.  **Navigate to the `watson-assistant-chatbot-ui` directory**
+5.  **Open the `watson-assistant-chatbot-ui` repository in your IDE or text editor**
 6.  **Create a `.env` file**
 
     1.  From your CLI or IDE, create an `.env` file from the `.env.example` template  
