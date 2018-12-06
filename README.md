@@ -61,12 +61,13 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/5-b.png" alt="Image 5-b" width="400px"/>
     3.  In your browser, navigate to the the Watson Assistant Service dashboard and click on `Service Credentials`  
         <img src="./screenshots/5-c.png" alt="Image 5-c" width="400px"/>
-    4.  In the service credentials list, click `View credentials` on one of the listed credentials (it shouldn't matter which credential you choose).  
+    4.  In the 'Service Credentials' list, click `View credentials` on one of the listed credentials (it shouldn't matter which credential you choose).  
         <img src="./screenshots/5-d.png" alt="Image 5-d" width="600px"/>
     5.  Copy the value of `apikey` to the `ASSISTANT_API_KEY` value in the `.env` file  
     6.  Copy the value of `url` to the `ASSISTANT_URL` value in the `.env` file  
         <img src="./screenshots/5-e.png" alt="Image 5-e" width="600px"/>
         <img src="./screenshots/5-e-i.png" alt="Image 5-e-i" width="400px"/>
+        ***NOTE: Do not wrap any values in the `.env` file in quotes.***
     7.  Click 'Manage' in the upper-left of the page to navigate back to the Watson Assistant service dashboard  
         <img src="./screenshots/5-f.png" alt="Image 5-f" width="400px"/>
     8.  Click the 'Launch Tool' button  
@@ -74,7 +75,7 @@ The following components are required to effectively use this repository:
     9.  A new browser tab will open displaying the IBM Watson Assistant tool
     10. Click on the 'Assistants' tab  
         <img src="./screenshots/5-h.png" alt="Image 5-h" width="400px"/>
-    11. On the right side of the row of the assistant you want to connect to the app, click on the vertical three-dot menu button  
+    11. Find the Assistant you want to connect to the Node.js Resource and click on the vertical three-dot menu button on the right side of the tile
         <img src="./screenshots/5-i.png" alt="Image 5-i" width="600px"/>
     12. Select 'View API Details'  
         <img src="./screenshots/5-j.png" alt="Image 5-j" width="400px"/>
