@@ -18,7 +18,7 @@ The following components are required to effectively use this repository:
 
 1. **Create a Node.js resource**  
 
-    ***NOTE: The Node.js resource must be created in the same organization and space as the Watson Assistant service in order to connect to it, otherwise it will not be visible in the available connections list referenced in Step 2.***  
+    ***NOTE: The Node.js resource must be created in the same organization and space as the Watson Assistant service in order to connect to it, otherwise it will not be possible to connect the resource and the service.***  
 
     1. From the IBM Cloud dashboard, click 'Create Resource'  
         <img src="./screenshots/1-a.png" alt="Image 1-a" width="600px"/>
