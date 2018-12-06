@@ -16,9 +16,9 @@ The following components are required to effectively use this repository:
 
 ## Deployment
 
-1. **Create a Node.js resource**  
+1. **Create a Node.js Cloud Foundry App**  
 
-    ***NOTE: The Node.js resource must be created in the same organization and space as the Watson Assistant service in order to connect to it, otherwise it will not be possible to connect the resource and the service.***  
+    ***NOTE: The Node.js Cloud Foundry app must be created in the same organization and space as the Watson Assistant service in order to connect to it, otherwise it will not be possible to connect the app and the service.***  
 
     1. From the IBM Cloud dashboard, click 'Create resource'  
         <img src="./public/screenshots/1-a.png" alt="Image 1-a" width="600px"/>
@@ -35,13 +35,13 @@ The following components are required to effectively use this repository:
     4. Click 'Create'  
         <img src="./public/screenshots/1-c-ii.png" alt="Image 1-c-ii" width="600px"/>
 
-2. **Connect the Node.js resource to your Watson Assistant Service**
+2. **Connect the Node.js Cloud Foundry App to your Watson Assistant Service**
 
     1. After being redirected to the dashboard of the newly-created app, click on the 'Connections' tab in the left-hand menu  
         <img src="./public/screenshots/2-a.png" alt="Image 2-a" width="400px"/>  
     2. Click the 'Create connection' button  
         <img src="./public/screenshots/2-b.png" alt="Image 2-b" width="600px"/>  
-    3. In the 'Services' list, find the Watson Assistant service that you want to connect to your resource and click 'Connect'  
+    3. In the 'Services' list, find the Watson Assistant service that you want to connect to your app and click 'Connect'  
         <img src="./public/screenshots/2-c.png" alt="Image 2-c" width="600px"/>  
     4. A 'Connect IAM-Enabled Service' dialog box will appear. There is no need to change either of the configurations shown. Click 'Connect'.  
         <img src="./public/screenshots/2-d.png" alt="Image 2-d" width="400px"/>
@@ -75,7 +75,7 @@ The following components are required to effectively use this repository:
     9.  A new browser tab will open displaying the IBM Watson Assistant tool
     10. Click on the 'Assistants' tab  
         <img src="./public/screenshots/5-h.png" alt="Image 5-h" width="400px"/>
-    11. Find the Assistant you want to connect to the Node.js Resource and click on the vertical three-dot menu button on the right side of the tile  
+    11. Find the Assistant you want to connect to the Node.js Cloud Foundry App and click on the vertical three-dot menu button on the right side of the tile  
         <img src="./public/screenshots/5-i.png" alt="Image 5-i" width="600px"/>
     12. Select 'View API Details'  
         <img src="./public/screenshots/5-j.png" alt="Image 5-j" width="400px"/>
@@ -94,7 +94,7 @@ The following components are required to effectively use this repository:
 
 8.  **Update the `static_store.js` file**
 
-    1. In your browser, from you IBM Cloud account Dashboard, click on your Node.js Resource
+    1. In your browser, from you IBM Cloud account Dashboard, click on your Node.js Cloud Foundry App
         <img src="./public/screenshots/8-a.png" alt="Image 8-a" width="600px"/>
     2. Click the 'Visit App URL' link  
         <img src="./public/screenshots/8-b.png" alt="Image 8-b" width="600px"/>
@@ -107,8 +107,11 @@ The following components are required to effectively use this repository:
 
     1. Make sure you have saved the `.env`, `manifest.yml`, and `static_store.js` files
     2. In the CLI, login to IBM Cloud by running the command: `ibmcloud login`
-    3. Select the account on which you created the Node.js resource
-    4. Target the Resource group, Organization and Space in which you created your Node.js Resource
+    3. Select the account on which you created the Node.js Cloud Foundry App
+    4. Target the Resource group, Organization and Space in which you created your Node.js Cloud Foundry App
+        - `imbcloud target -g {resource_group}`
+        - `imbcloud target -o {organization}`
+        - `imbcloud target -s {space}`
     5. From within this directory, run `ibmcloud app push {your-app-name}`, substituting `{your-app-name}` for the name of your app
         - e.g. `ibmcloud app push lem-assistant-chatbot`
 
