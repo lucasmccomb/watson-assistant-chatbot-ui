@@ -45,51 +45,44 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/2-c.png" alt="Image 2-c" width="600px"/>  
     4. A 'Connect IAM-Enabled Service' dialog box will appear. There is no need to change either of the configurations shown. Click 'Connect'.  
         <img src="./screenshots/2-d.png" alt="Image 2-d" width="400px"/>
-    5. A 'Restage App' dialog box will appear. Click 'Restage'  
+    5. A 'Restage app' dialog box will then appear. Click 'Restage'.  
         <img src="./screenshots/2-e.png" alt="Image 2-e" width="400px"/>
-    <!-- 6. Navigate back to your IBM Cloud account dashboard by clicking on 'IBM Cloud' in the upper-right corner 
-        <img src="./screenshots/2-f.png" alt="Image 2-f" width="600px"/>
-    1. In the services list, click on the target Watson Assistant service that you just connected to the Node.js resource  
-        <img src="./screenshots/2-g.png" alt="Image 2-g" width="600px"/>
-    2. Click on the 'Connections' tab on the left-hand menu  
-        <img src="./screenshots/2-h.png" alt="Image 2-h" width="600px"/>
-    3. Verify that the 
-    4.  Select your newly created app
-    5.  Allow your app to restage -->
 
 3.  **From your CLI, clone this repository onto your local machine:** 
     - `git clone https://github.com/lukemccomb/watson-assistant-chatbot-ui.git`
 4.  **Navigate to the `watson-assistant-chatbot-ui` directory**
-5.  **Open the `watson-assistant-chatbot-ui` repository in your IDE or text editor**
-6.  **Create a `.env` file**
+5.  - `cd watson-assistant-chatbot-ui`
+6.  **Open the `watson-assistant-chatbot-ui` repository in your IDE or text editor**
+7.  **Create a `.env` file**
 
-    1.  From your CLI or IDE, create an `.env` file from the `.env.example` template  
+    1.  From your CLI or IDE, create an `.env` file  
         <img src="./screenshots/5-a.png" alt="Image 5-a" width="600px"/>
+    2.  Copy all of the variables from the `.env.example` template into the new `.env` file
         <img src="./screenshots/5-b.png" alt="Image 5-b" width="400px"/>
-    2.  In your browser, navigate to the the Watson Assistant Service dashboard and click on `Service Credentials`  
+    3.  In your browser, navigate to the the Watson Assistant Service dashboard and click on `Service Credentials`  
         <img src="./screenshots/5-c.png" alt="Image 5-c" width="400px"/>
-    3.  In the service credentials list, click `View credentials` on one of the listed credentials (it shouldn't matter which credential you choose).  
+    4.  In the service credentials list, click `View credentials` on one of the listed credentials (it shouldn't matter which credential you choose).  
         <img src="./screenshots/5-d.png" alt="Image 5-d" width="600px"/>
-    4.  Copy the value of `apikey` to the `ASSISTANT_API_KEY` value in the `.env` file  
-    5.  Copy the value of `url` to the `ASSISTANT_URL` value in the `.env` file  
+    5.  Copy the value of `apikey` to the `ASSISTANT_API_KEY` value in the `.env` file  
+    6.  Copy the value of `url` to the `ASSISTANT_URL` value in the `.env` file  
         <img src="./screenshots/5-e.png" alt="Image 5-e" width="600px"/>
         <img src="./screenshots/5-e-i.png" alt="Image 5-e-i" width="400px"/>
-    6.  Click 'Manage' in the upper-left of the page to navigate back to the Watson Assistant service dashboard  
+    7.  Click 'Manage' in the upper-left of the page to navigate back to the Watson Assistant service dashboard  
         <img src="./screenshots/5-f.png" alt="Image 5-f" width="400px"/>
-    7.  Click the 'Launch Tool' button  
+    8.  Click the 'Launch Tool' button  
         <img src="./screenshots/5-g.png" alt="Image 5-g" width="400px"/>
-    8.  A new browser tab will open displaying the IBM Watson Assistant tool
-    9.  Click on the 'Assistants' tab  
+    9.  A new browser tab will open displaying the IBM Watson Assistant tool
+    10. Click on the 'Assistants' tab  
         <img src="./screenshots/5-h.png" alt="Image 5-h" width="400px"/>
-    10. On the right side of the row of the assistant you want to connect to the app, click on the vertical three-dot menu button  
+    11. On the right side of the row of the assistant you want to connect to the app, click on the vertical three-dot menu button  
         <img src="./screenshots/5-i.png" alt="Image 5-i" width="600px"/>
-    11. Select 'View API Details'  
+    12. Select 'View API Details'  
         <img src="./screenshots/5-j.png" alt="Image 5-j" width="400px"/>
-    12. Copy the 'Assistant ID' into the `ASSISTANT_ID` variable in the `.env` file  
+    13. Copy the 'Assistant ID' into the `ASSISTANT_ID` variable in the `.env` file  
         <img src="./screenshots/5-k.png" alt="Image 5-k" width="400px"/>
         <img src="./screenshots/5-l.png" alt="Image 5-l" width="400px"/>
 
-7.  **Update the `manifest.yml` file using your IDE or text editor**
+8.  **Update the `manifest.yml` file using your IDE or text editor**
 
     1. Change the `name` and `route` fields to match your app name which can be found on your IBM Cloud account dashboard  
         <img src="./screenshots/5-m.png" alt="Image 5-m" width="500px"/>
@@ -98,7 +91,7 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/5-o.png" alt="Image 5-o" width="400px"/>  
         <img src="./screenshots/5-p.png" alt="Image 5-p" width="400px"/>
 
-8.  **Update the `static_store.js` file**
+9.  **Update the `static_store.js` file**
 
     1. In your browser, navigate to the 'Overview' tab in your app's dashboard
         <img src="./screenshots/8-a.png" alt="Image 8-a" width="600px"/>
@@ -109,7 +102,7 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/8-d.png" alt="Image 8-d" width="500px"/>  
     ***NOTE: Make sure there is no trailing backslash at the end of the URL***
 
-9.  **Push the modified repository**
+10. **Push the modified repository**
 
     1. In the CLI, login to IBM Cloud `ibmcloud login`
     2. Select the account on which you created the Node.js resource
@@ -117,11 +110,11 @@ The following components are required to effectively use this repository:
     4. From within this directory, run `ibmcloud app push {your-app-name}` to push the repository up
         - e.g. `ibmcloud app push lem-assistant-chatbot`
 
-10. **The chatbot app is now deployed.**
+11. **The chatbot app is now deployed.**
 
     - You can test this by navigating to your app's route which you copied in [Step 8.iii](#step_8iii). You should see a blank page with a blue button in the bottom right that says 'Need Help?'. Click on this button to open the chat dialog and test out the Watson Assistant service.
 
-11. **Add script tag into the target application within which the chatbot will exist**
+12. **Add script tag into the target application within which the chatbot will exist**
 
     1. Open the html file of the page you want to insert the script tag into
     2. Copy and paste the following tag below the end-tag of the `<body>` element:
