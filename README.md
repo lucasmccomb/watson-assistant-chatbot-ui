@@ -85,16 +85,16 @@ The following components are required to effectively use this repository:
 
 8.  **Update the `manifest.yml` file using your IDE or text editor**
 
-    1. Change the `name` and `route` fields to match your app name which can be found on your IBM Cloud account dashboard  
+    1. In `manifest.yml`, change the `name` and `route` fields to match your app name which can be found on your IBM Cloud account dashboard  
         <img src="./screenshots/5-m.png" alt="Image 5-m" width="500px"/>
         <img src="./screenshots/5-n.png" alt="Image 5-n" width="400px"/>
-    2. Update the `services` list with the Watson Assistant service name which can also be found on your IBM Cloud account dashboard  
+    2. In `manifest.yml`, update the `services` list with the Watson Assistant service name which can also be found on your IBM Cloud account dashboard  
         <img src="./screenshots/5-o.png" alt="Image 5-o" width="400px"/>  
         <img src="./screenshots/5-p.png" alt="Image 5-p" width="400px"/>
 
 9.  **Update the `static_store.js` file**
 
-    1. In your browser, navigate to the 'Overview' tab in your app's dashboard
+    1. In your browser, from you IBM Cloud account Dashboard, click on your Node.js Resource
         <img src="./screenshots/8-a.png" alt="Image 8-a" width="600px"/>
     2. Click the 'Visit App URL' link  
         <img src="./screenshots/8-b.png" alt="Image 8-b" width="600px"/>
