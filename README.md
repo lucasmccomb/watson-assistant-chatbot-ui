@@ -22,7 +22,7 @@ The following components are required to effectively use this repository:
 
     1. From the IBM Cloud dashboard, click 'Create Resource'  
         <img src="./screenshots/1-a.png" alt="Image 1-a" width="600px"/>
-    2. Within the 'Compute' category, select 'SDK for Node.js'  
+    2. Enter 'node.js' into the search bar and click on the 'SDK for Node.js' tile  
         <img src="./screenshots/1-b.png" alt="Image 1-b" width="600px"/>
     3. <a id="step_1-iii">Configure the application</a>
         1. Enter an app name
