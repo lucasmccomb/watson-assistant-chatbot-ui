@@ -80,7 +80,7 @@ The following components are required to effectively use this repository:
     12. Select 'View API Details'  
         <img src="./screenshots/5-j.png" alt="Image 5-j" width="400px"/>
     13. Copy the 'Assistant ID' into the `ASSISTANT_ID` variable in the `.env` file  
-        <img src="./screenshots/5-k.png" alt="Image 5-k" width="400px"/>
+        <img src="./screenshots/5-k.png" alt="Image 5-k" width="400px"/>  
         <img src="./screenshots/5-l.png" alt="Image 5-l" width="400px"/>
 
 8.  **Update the `manifest.yml` file using your IDE or text editor**
