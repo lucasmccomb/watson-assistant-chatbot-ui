@@ -37,11 +37,11 @@ The following components are required to effectively use this repository:
 
 2. **Connect the Node.js resource to your Watson Assistant Service**
 
-    1. Once redirected to the dashboard of the newly-created app, click on the 'Connections' tab in the left-hand menu  
+    1. After being redirected to the dashboard of the newly-created app, click on the 'Connections' tab in the left-hand menu  
         <img src="./screenshots/2-a.png" alt="Image 2-a" width="400px"/>  
     2. Click the 'Create Connection' button  
         <img src="./screenshots/2-b.png" alt="Image 2-b" width="600px"/>  
-    3. Click 'Connect' on the Watson Assistant service that you want to connect to your app in the list of available services  
+    3. Find the Watson Assistant service that you want to connect to your app in the list of available services and click 'Connect'  
         <img src="./screenshots/2-c.png" alt="Image 2-c" width="600px"/>  
     4. A 'Connect IAM-Enabled Service' dialog box will appear. There is no need to change either of the configurations shown. Click 'Connect'.  
         <img src="./screenshots/2-d.png" alt="Image 2-d" width="400px"/>
