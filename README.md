@@ -125,8 +125,9 @@ The following components are required to effectively use this repository:
         ```javascript
             <script data-main='chat_bot_app' src="{host}/chat_bot_app.js"></script>
         ```
-    3. Change `{host}` in `src` attribute to match your app's route which you copied in [Step 8.iii](#step_8iii)  
-        <img src="./screenshots/11-a.png" alt="Image 11-a" width="600px"/>  
+    3. Change `{host}` in the `src` attribute to match your app's route which you copied in [Step 8.iii](#step_8iii)  
+        ***NOTE: Make sure there is only one backslash between your app's route and `chat_bot_app.js`***  
+        <img src="./screenshots/11-a.png" alt="Image 11-a" width="700px"/>  
     4. Save your changes and either run your app locally or deploy it to your cloud environment
 
 **Within your own application or website, you should now see a blue 'Need Help?' button in the bottom right corner of the page that you inserted the script tag into. When the button is clicked, a chatbot window should appear and you should be able to have a conversation with your Watson Assistant service.**
