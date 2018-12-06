@@ -51,9 +51,9 @@ The following components are required to effectively use this repository:
 3.  **From your CLI, clone this repository onto your local machine:** 
     - `git clone https://github.com/lukemccomb/watson-assistant-chatbot-ui.git`
 4.  **Navigate to the `watson-assistant-chatbot-ui` directory**
-5.  - `cd watson-assistant-chatbot-ui`
-6.  **Open the `watson-assistant-chatbot-ui` repository in your IDE or text editor**
-7.  **Create a `.env` file**
+    - `cd watson-assistant-chatbot-ui`
+5.  **Open the `watson-assistant-chatbot-ui` repository in your IDE or text editor**
+6.  **Create a `.env` file**
 
     1.  From your CLI or IDE, create an `.env` file  
         <img src="./screenshots/5-a.png" alt="Image 5-a" width="600px"/>
@@ -83,7 +83,7 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/5-k.png" alt="Image 5-k" width="400px"/>  
         <img src="./screenshots/5-l.png" alt="Image 5-l" width="400px"/>
 
-8.  **Update the `manifest.yml` file using your IDE or text editor**
+7.  **Update the `manifest.yml` file using your IDE or text editor**
 
     1. In `manifest.yml`, change the `name` and `route` fields to match your app name which can be found on your IBM Cloud account dashboard  
         <img src="./screenshots/5-m.png" alt="Image 5-m" width="500px"/>
@@ -92,7 +92,7 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/5-o.png" alt="Image 5-o" width="400px"/>  
         <img src="./screenshots/5-p.png" alt="Image 5-p" width="400px"/>
 
-9.  **Update the `static_store.js` file**
+8.  **Update the `static_store.js` file**
 
     1. In your browser, from you IBM Cloud account Dashboard, click on your Node.js Resource
         <img src="./screenshots/8-a.png" alt="Image 8-a" width="600px"/>
@@ -103,7 +103,7 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/8-c.png" alt="Image 8-c" width="400px"/>
         <img src="./screenshots/8-d.png" alt="Image 8-d" width="500px"/>  
 
-10. **Push the modified repository**
+9.  **Push the modified repository**
 
     1. Make sure you have saved the `.env`, `manifest.yml`, and `static_store.js` files
     2. In the CLI, login to IBM Cloud by running the command: `ibmcloud login`
@@ -112,13 +112,13 @@ The following components are required to effectively use this repository:
     5. From within this directory, run `ibmcloud app push {your-app-name}`, substituting `{your-app-name}` for the name of your app
         - e.g. `ibmcloud app push lem-assistant-chatbot`
 
-11. **The chatbot app is now deployed.**
+10. **The chatbot app is now deployed.**
 
     - You can test this by navigating to your app's route which you copied in [Step 8.iii](#step_8iii). You should see a blank page with a blue button in the bottom right that says 'Need Help?'. Click on this button to open the chat dialog and test out the Watson Assistant service.  
 
     <img src="./screenshots/gif-1.gif" alt="Image gif-1" width="600px"/>  
 
-12. **Add `<script>` tag into the target application within which the chatbot will exist**
+11. **Add `<script>` tag into the target application within which the chatbot will exist**
 
     1. Open the html file of the page you want to insert the script tag into
     2. Copy the following `<script>` tag and paste it below the end-tag of the `<body>` element:
