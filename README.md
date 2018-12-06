@@ -6,7 +6,7 @@ A Node.js/React.js app that provides a simple chatbot user interface for the IBM
 ## Deployment
 
 The following components are required to effectively use this repository:
-- An [IBM Cloud](https://cloud.ibm.com/registration){:target="_blank"} account
+- An [IBM Cloud](https://cloud.ibm.com/registration target="_blank") account
 - A [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/){:target="_blank"} service instance
 - A target app or website into which the chatbot will be inserted
 - A Command Line Interface (CLI)
