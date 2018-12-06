@@ -3,7 +3,7 @@ A Node.js/React.js app that provides a simple chatbot user interface for the IBM
 
 ***
 
-## Deployment
+## Environment Setup
 
 The following components are required to effectively use this repository:
 - An [IBM Cloud](https://cloud.ibm.com/registration) account
@@ -13,6 +13,8 @@ The following components are required to effectively use this repository:
 - An installation of the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview)
 - A text editor or Integrated Development Environment (IDE) e.g. [VS Code](https://code.visualstudio.com/)
 - An up-to-date version of [Firefox](https://www.mozilla.org/en-US/firefox/new/) or [Google Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTggc345A8KxyUcNEmc1evvkxhRQDSb8WS-FLmDQUPOyqJZL-LCsrRoCVMQQAvD_BwE&gclsrc=aw.ds&dclid=CP7z2LWAjt4CFaO6swod1zsEsw)
+
+## Deployment
 
 1. **Create a Node.js resource**  
 
