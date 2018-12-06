@@ -118,10 +118,10 @@ The following components are required to effectively use this repository:
 
     <img src="./screenshots/gif-1.gif" alt="Image gif-1" width="600px"/>  
 
-12. **Add script tag into the target application within which the chatbot will exist**
+12. **Add `<script>` tag into the target application within which the chatbot will exist**
 
     1. Open the html file of the page you want to insert the script tag into
-    2. Copy and paste the following tag below the end-tag of the `<body>` element:
+    2. Copy the following `<script>` tag and paste it below the end-tag of the `<body>` element:
         ```javascript
             <script data-main='chat_bot_app' src="{host}/chat_bot_app.js"></script>
         ```
