@@ -20,15 +20,15 @@ The following components are required to effectively use this repository:
 
     ***NOTE: The Node.js resource must be created in the same organization and space as the Watson Assistant service in order to connect to it, otherwise it will not be possible to connect the resource and the service.***  
 
-    1. From the IBM Cloud dashboard, click 'Create Resource'  
+    1. From the IBM Cloud dashboard, click 'Create resource'  
         <img src="./screenshots/1-a.png" alt="Image 1-a" width="600px"/>
-    2. Enter 'node.js' into the search bar and click on the 'SDK for Node.js' tile  
+    2. Enter 'node.js' into the search bar and click on the 'SDK for Node.js™' tile  
         <img src="./screenshots/1-b.png" alt="Image 1-b" width="600px"/>
     3. <a id="step_1-iii">Configure the application</a>
-        1. Enter an app name
-        2. Enter a host name
-        3. Select a domain
-        4. Choose a region
+        1. Enter an App name
+        2. Enter a Host name
+        3. Select a Domain
+        4. Choose a region/location to deploy in
         5. Choose and organization
         6. Choose a space  
         <img src="./screenshots/1-c-i.png" alt="Image 1-c-i" width="600px"/>
@@ -59,9 +59,9 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/5-a.png" alt="Image 5-a" width="600px"/>
     2.  Copy all of the variables from the `.env.example` template into the new `.env` file
         <img src="./screenshots/5-b.png" alt="Image 5-b" width="400px"/>
-    3.  In your browser, navigate to the the Watson Assistant Service dashboard and click on `Service Credentials`  
+    3.  In your browser, navigate to the the Watson Assistant Service dashboard and click on 'Service credentials'  
         <img src="./screenshots/5-c.png" alt="Image 5-c" width="400px"/>
-    4.  In the 'Service Credentials' list, click `View credentials` on one of the listed credentials (it shouldn't matter which credential you choose).  
+    4.  In the 'Service Credentials' list, click 'View credentials' on one of the listed credentials (it shouldn't matter which credential you choose).  
         <img src="./screenshots/5-d.png" alt="Image 5-d" width="600px"/>
     5.  Copy the value of `apikey` to the `ASSISTANT_API_KEY` value in the `.env` file  
     6.  Copy the value of `url` to the `ASSISTANT_URL` value in the `.env` file  
@@ -70,7 +70,7 @@ The following components are required to effectively use this repository:
         ***NOTE: Do not wrap any values in the `.env` file in quotes.***
     7.  Click 'Manage' in the upper-left of the page to navigate back to the Watson Assistant service dashboard  
         <img src="./screenshots/5-f.png" alt="Image 5-f" width="400px"/>
-    8.  Click the 'Launch Tool' button  
+    8.  Click the 'Launch tool' button  
         <img src="./screenshots/5-g.png" alt="Image 5-g" width="400px"/>
     9.  A new browser tab will open displaying the IBM Watson Assistant tool
     10. Click on the 'Assistants' tab  
@@ -116,7 +116,7 @@ The following components are required to effectively use this repository:
 
     - You can test this by navigating to your app's route which you copied in [Step 8.iii](#step_8iii). You should see a blank page with a blue button in the bottom right that says 'Need Help?'. Click on this button to open the chat dialog and test out the Watson Assistant service.  
 
-    <img src="./screenshots/gif-1.gif" alt="Image gif-1" width="600px"/>  
+        <img src="./screenshots/gif-1.gif" alt="Image gif-1" width="600px"/>  
 
 11. **Add `<script>` tag into the target application within which the chatbot will exist**
 
@@ -126,11 +126,13 @@ The following components are required to effectively use this repository:
             <script data-main='chat_bot_app' src="{host}/chat_bot_app.js"></script>
         ```
     3. Change `{host}` in the `src` attribute to match your app's route which you copied in [Step 8.iii](#step_8iii)  
+        
         ***NOTE: Make sure there is only one backslash between your app's route and `chat_bot_app.js`***  
+        
         <img src="./screenshots/11-a.png" alt="Image 11-a" width="700px"/>  
     4. Save your changes and either run your app locally or deploy it to your cloud environment
 
-**Within your own application or website, you should now see a blue 'Need Help?' button in the bottom right corner of the page that you inserted the script tag into. When the button is clicked, a chatbot window should appear and you should be able to have a conversation with your Watson Assistant service. <a href="https://lem-assistant-demo-1.mybluemix.net/">Here is a working demo.</a>**
+**Within your own application or website, you should now see a blue 'Need Help?' button in the bottom right corner of the page that you inserted the script tag into. When the button is clicked, a chat window should appear and you should be able to have a conversation with your Watson Assistant service. <a href="https://lem-assistant-demo-1.mybluemix.net/">Here is a working demo.</a>**
 
 ***
 
