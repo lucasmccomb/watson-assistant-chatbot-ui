@@ -6,13 +6,13 @@ A Node.js/React.js app that provides a simple chatbot user interface for the IBM
 ## Deployment
 
 The following components are required to effectively use this repository:
-- An <a target="_blank" href="https://cloud.ibm.com/registration">IBM Cloud</a> account
-- A <a target="_blank" href="https://www.ibm.com/cloud/watson-assistant/">IBM Watson Assistant</a> service instance
+- An [IBM Cloud](https://cloud.ibm.com/registration){:target="_blank"} account
+- A [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/){:target="_blank"} service instance
 - A target app or website into which the chatbot will be inserted
 - A Command Line Interface (CLI)
-- An installation of the <a target="_blank" href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud CLI</a>
-- A text editor or Integrated Development Environment (IDE) e.g. [VS Code](https://code.visualstudio.com/)
-- An up-to-date version of <a target="_blank" href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a target="_blank" href="https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTggc345A8KxyUcNEmc1evvkxhRQDSb8WS-FLmDQUPOyqJZL-LCsrRoCVMQQAvD_BwE&gclsrc=aw.ds&dclid=CP7z2LWAjt4CFaO6swod1zsEsw">Google Chrome</a>
+- An installation of the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview){:target="_blank"}
+- A text editor or Integrated Development Environment (IDE) e.g. [VS Code](https://code.visualstudio.com/){:target="_blank"}
+- An up-to-date version of [Firefox](https://www.mozilla.org/en-US/firefox/new/){:target="_blank"} or [Google Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTggc345A8KxyUcNEmc1evvkxhRQDSb8WS-FLmDQUPOyqJZL-LCsrRoCVMQQAvD_BwE&gclsrc=aw.ds&dclid=CP7z2LWAjt4CFaO6swod1zsEsw){:target="_blank"}
 
 1. **Create a Node.js resource**  
 
