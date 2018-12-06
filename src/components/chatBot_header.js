@@ -20,7 +20,9 @@ class ChatBotHeader extends Component {
             "chtBot_brdrClr--lghtGray",
             "chtBot_brdrStyl--solid",
             "chtBot_brdrRdTpLft--10px",
-            "chtBot_brdrRdTpRght--10px"
+            "chtBot_brdrRdTpRght--10px",
+            "chtBot_pddTp--10px",
+            "chtBot_pddBtm--15px"
         ];
         const closeBtnClasses = [
             "chtBot_top--10px",
@@ -40,7 +42,6 @@ class ChatBotHeader extends Component {
             "chtBot_flt--left"
         ];
         const hdrTxtWrapClasses = [
-            "chtBot_wdth--310px",
             "chtBot_txtAlgn--left",
             "chtBot_hght--100per",
             "chtBot_dsply--in-block",
@@ -52,10 +53,10 @@ class ChatBotHeader extends Component {
         return <div id="dialog_header" className={headerClasses.join(' ')}>
             <div id="hdr_close_btn" className={ closeBtnClasses.join(' ')} onClick={() => this.props.toggleChatWindow()}></div>
             <div id="header_icon_wrap" className={iconClasses.join(' ')}>
-                <img id="header_icon" src={HeaderIcon} className="chtBot_wdth--50px chtBot_mrgnTp--30px"/>
+                <img id="header_icon" src={HeaderIcon} className="chtBot_wdth--35px chtBot_mrgnTp--12px"/>
             </div>
             <div id="header_txt_wrap" className={hdrTxtWrapClasses.join(' ')}>
-                <p id="header_txt_title" className="chtBot_txtClr--blue chtBot_pddTp--20px">Watson Assistant Node.js/React.js Chatbot</p>
+                <p id="header_txt_title" className="chtBot_txtClr--blue chtBot_pddTp--11px">IBM Watson Assistant Chatbot</p>
             </div>
         </div>
     }

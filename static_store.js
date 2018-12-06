@@ -1,4 +1,4 @@
-const DEV_HOST_URL = 'https://Watson-Assistant-Node-React-Chatbot.mybluemix.net';
+const DEV_HOST_URL = 'https://lem-assistant-chatbot-ui.mybluemix.net';
 const LOCAL_HOST_URL = 'http://localhost:3000';
 
 module.exports = {

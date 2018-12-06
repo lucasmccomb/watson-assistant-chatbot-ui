@@ -7,6 +7,11 @@ class ChatBotUserInput extends Component {
         this.state = {
             userInput: undefined
         }
+        this.textInput = React.createRef();
+    }
+
+    componentDidMount() {
+        this.textInput.current.focus();
     }
 
     handleUserInput(e) {
@@ -32,7 +37,7 @@ class ChatBotUserInput extends Component {
             "chtBot_brdrTp--1px",
             "chtBot_brdrClr--lghtGray",
             "chtBot_brdrStyl--solid",
-            "chtBot_hght--120px",
+            "chtBot_hght--70px",
             "chtBot_pddAll--15px",
             "chtBot_brdrRdBtmRght--10px",
             "chtBot_brdrRdBtmLft--10px"
@@ -64,7 +69,8 @@ class ChatBotUserInput extends Component {
         return <div className={inputWrapClasses.join(' ')}>
                 <textarea id="user_input"
                     className={txtAreaClasses.join(' ')}
-                    placeholder="Type a message here and press the 'Enter' key to send it."
+                    ref={this.textInput}
+                    placeholder="Type a message and press the 'Enter' key to send it"
                     onKeyPress={(e) => {this.checkEnterKey(e)}}
                     onChange={(e) => {this.handleUserInput(e)}}
                     defaultValue={userInput}

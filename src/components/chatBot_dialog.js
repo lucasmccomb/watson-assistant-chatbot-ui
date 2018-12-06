@@ -18,7 +18,7 @@ class ChatBotDialog extends Component {
             "chtBot_mxWdth--100per",
             "chtBot_hght--275px",
             "chtBot_mrgnAll--3per",
-            "chtBot_mrgnTp--130px",
+            "chtBot_mrgnTp--90px",
             "chtBot_ovrflwY--scroll",
             "chtBot_ovrflwWrap--break"
         ];

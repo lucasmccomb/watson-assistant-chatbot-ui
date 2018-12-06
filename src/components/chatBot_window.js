@@ -102,8 +102,8 @@ class ChatBotWindow extends Component {
             "chtBot_fntFm--sanSer",
             "chtBot_fntSz--12px",
             "chtBot_brdrRdAll--10px",
-            "chtBot_wdth--400px",
-            "chtBot_hght--568px",
+            "chtBot_wdth--340px",
+            "chtBot_hght--478px",
             "chtBot_bgClr--white",
             "chtBot_boxShdw--blue"
         ];
