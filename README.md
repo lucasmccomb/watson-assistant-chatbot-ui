@@ -130,7 +130,7 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/11-a.png" alt="Image 11-a" width="700px"/>  
     4. Save your changes and either run your app locally or deploy it to your cloud environment
 
-**Within your own application or website, you should now see a blue 'Need Help?' button in the bottom right corner of the page that you inserted the script tag into. When the button is clicked, a chatbot window should appear and you should be able to have a conversation with your Watson Assistant service.**
+**Within your own application or website, you should now see a blue 'Need Help?' button in the bottom right corner of the page that you inserted the script tag into. When the button is clicked, a chatbot window should appear and you should be able to have a conversation with your Watson Assistant service. <a href="https://lem-assistant-demo-1.mybluemix.net/">Here is a working demo.</a>**
 
 ***
 
