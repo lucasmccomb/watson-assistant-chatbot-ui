@@ -41,7 +41,7 @@ The following components are required to effectively use this repository:
         <img src="./screenshots/2-a.png" alt="Image 2-a" width="400px"/>  
     2. Click the 'Create Connection' button  
         <img src="./screenshots/2-b.png" alt="Image 2-b" width="600px"/>  
-    3. Find the Watson Assistant service that you want to connect to your app in the list of available services and click 'Connect'  
+    3. In the 'Services' list, find the Watson Assistant service that you want to connect to your resource and click 'Connect'  
         <img src="./screenshots/2-c.png" alt="Image 2-c" width="600px"/>  
     4. A 'Connect IAM-Enabled Service' dialog box will appear. There is no need to change either of the configurations shown. Click 'Connect'.  
         <img src="./screenshots/2-d.png" alt="Image 2-d" width="400px"/>
