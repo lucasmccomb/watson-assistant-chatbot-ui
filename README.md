@@ -6,13 +6,13 @@ A Node.js/React.js app that provides a simple chatbot user interface for the IBM
 ## Deployment
 
 The following components are required to effectively use this repository:
-- An [IBM Cloud](https://cloud.ibm.com/registration target="_blank") account
-- A [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/){:target="_blank"} service instance
+- An [IBM Cloud](https://cloud.ibm.com/registration) account
+- A [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) service instance
 - A target app or website into which the chatbot will be inserted
 - A Command Line Interface (CLI)
-- An installation of the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview){:target="_blank"}
-- A text editor or Integrated Development Environment (IDE) e.g. [VS Code](https://code.visualstudio.com/){:target="_blank"}
-- An up-to-date version of [Firefox](https://www.mozilla.org/en-US/firefox/new/){:target="_blank"} or [Google Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTggc345A8KxyUcNEmc1evvkxhRQDSb8WS-FLmDQUPOyqJZL-LCsrRoCVMQQAvD_BwE&gclsrc=aw.ds&dclid=CP7z2LWAjt4CFaO6swod1zsEsw){:target="_blank"}
+- An installation of the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview)
+- A text editor or Integrated Development Environment (IDE) e.g. [VS Code](https://code.visualstudio.com/)
+- An up-to-date version of [Firefox](https://www.mozilla.org/en-US/firefox/new/) or [Google Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTggc345A8KxyUcNEmc1evvkxhRQDSb8WS-FLmDQUPOyqJZL-LCsrRoCVMQQAvD_BwE&gclsrc=aw.ds&dclid=CP7z2LWAjt4CFaO6swod1zsEsw)
 
 1. **Create a Node.js resource**  
 
@@ -110,9 +110,10 @@ The following components are required to effectively use this repository:
 9.  **Push the modified repository**
 
     1. In the CLI, login to IBM Cloud `ibmcloud login`
-    2. Select the account 
-    3. From within this directory, run `cf push {your-app-name}` to push the repository up
-        - e.g. `cf push Watson-Assistant-Node-React-Chatbot`
+    2. Select the account on which you created the Node.js resource
+    3. Target the Resource group, Organization and Space in which you created your Node.js Resource
+    4. From within this directory, run `ibmcloud app push {your-app-name}` to push the repository up
+        - e.g. `ibmcloud app push lem-assistant-chatbot`
 
 10. **The chatbot app is now deployed.**
 
