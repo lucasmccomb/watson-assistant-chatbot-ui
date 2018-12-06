@@ -99,16 +99,17 @@ The following components are required to effectively use this repository:
     2. Click the 'Visit App URL' link  
         <img src="./screenshots/8-b.png" alt="Image 8-b" width="600px"/>
     3. <a id="step_8iii">Copy the URL from the new tab that opens and paste it into the `DEV_HOST_URL` variable in `static_store.js`</a>  
+        ***NOTE: Make sure there is no trailing backslash at the end of the URL***  
         <img src="./screenshots/8-c.png" alt="Image 8-c" width="400px"/>
         <img src="./screenshots/8-d.png" alt="Image 8-d" width="500px"/>  
-    ***NOTE: Make sure there is no trailing backslash at the end of the URL***
 
 10. **Push the modified repository**
 
-    1. In the CLI, login to IBM Cloud `ibmcloud login`
-    2. Select the account on which you created the Node.js resource
-    3. Target the Resource group, Organization and Space in which you created your Node.js Resource
-    4. From within this directory, run `ibmcloud app push {your-app-name}` to push the repository up
+    1. Make sure you have saved the `.env`, `manifest.yml`, and `static_store.js` files
+    2. In the CLI, login to IBM Cloud by running the command: `ibmcloud login`
+    3. Select the account on which you created the Node.js resource
+    4. Target the Resource group, Organization and Space in which you created your Node.js Resource
+    5. From within this directory, run `ibmcloud app push {your-app-name}`, substituting `{your-app-name}` for the name of your app
         - e.g. `ibmcloud app push lem-assistant-chatbot`
 
 11. **The chatbot app is now deployed.**
