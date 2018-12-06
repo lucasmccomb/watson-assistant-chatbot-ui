@@ -116,7 +116,7 @@ The following components are required to effectively use this repository:
 
     - You can test this by navigating to your app's route which you copied in [Step 8.iii](#step_8iii). You should see a blank page with a blue button in the bottom right that says 'Need Help?'. Click on this button to open the chat dialog and test out the Watson Assistant service.  
 
-    <img src="./screenshots/gif-1" alt="Image gif-1" width="600px"/>  
+    <img src="./screenshots/gif-1.gif" alt="Image gif-1" width="600px"/>  
 
 12. **Add script tag into the target application within which the chatbot will exist**
 
