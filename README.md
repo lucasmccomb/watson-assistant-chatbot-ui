@@ -6,13 +6,13 @@ A Node.js/React.js app that provides a simple chatbot user interface for the IBM
 ## Deployment
 
 The following components are required to effectively use this repository:
-- An [IBM Cloud](https://cloud.ibm.com/registration) account
-- A [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) service instance
+- An <a href="https://cloud.ibm.com/registration">IBM Cloud</a> account
+- A <a href="https://www.ibm.com/cloud/watson-assistant/">IBM Watson Assistant</a> service instance
 - A target app or website into which the chatbot will be inserted
 - A Command Line Interface (CLI)
-- An installation of the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview)
+- An installation of the <a href="https://console.bluemix.net/docs/cli/index.html#overview">IBM Cloud CLI</a>
 - A text editor or Integrated Development Environment (IDE) e.g. [VS Code](https://code.visualstudio.com/)
-- An up-to-date version of [Firefox](https://www.mozilla.org/en-US/firefox/new/) or [Google Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTggc345A8KxyUcNEmc1evvkxhRQDSb8WS-FLmDQUPOyqJZL-LCsrRoCVMQQAvD_BwE&gclsrc=aw.ds&dclid=CP7z2LWAjt4CFaO6swod1zsEsw)
+- An up-to-date version of <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTggc345A8KxyUcNEmc1evvkxhRQDSb8WS-FLmDQUPOyqJZL-LCsrRoCVMQQAvD_BwE&gclsrc=aw.ds&dclid=CP7z2LWAjt4CFaO6swod1zsEsw">Google Chrome</a>
 
 1. **Create a Node.js resource**  
 
