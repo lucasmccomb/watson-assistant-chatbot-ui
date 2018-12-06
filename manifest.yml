@@ -1,0 +1,15 @@
+---
+declared-services:
+  assistant-prod:
+    label: assistant
+applications:
+- name: Watson-Assistant-Node-React-Chatbot
+  route: Watson-Assistant-Node-React-Chatbot
+  command: npm start
+  path: .
+  instances: 1
+  services:
+  - Watson Assistant (formerly Conversation)-de
+  memory: 1024M
+  env:
+    NPM_CONFIG_PRODUCTION: false
