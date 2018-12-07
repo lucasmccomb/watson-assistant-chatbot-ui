@@ -185,7 +185,7 @@ The `/src/` directory contains:
 - `/components/`: all React components that make up the chat bot UI
 - `index.js`: the entry point for the React app
 
-### Back-end (Node.js/Express.js/MongoDB)
+### Back-end (Node.js/Express.js)
 
 Directories/Files:
 - `/app.js`: main file that configures the Node app: defines the routes, makes any public files available, and makes some libraries/packages available to the rest of the app through `module.exports`
@@ -198,7 +198,7 @@ Directories/Files:
 - `.babelrc`: Babel configuration
 - `.cfignore`: Cloud Foundry ignore file
 - `.env`: Environment variable storage
-- `.gitignore`: Git ignore file
+- `.gitignore`: Contains file names that Git will ignore
 - `manifest.yml`: Manifest file for Cloud Foundry deployment
 - `static_store.js`: Static value storage file
 - `webpack.config.js`: Webpack config file
