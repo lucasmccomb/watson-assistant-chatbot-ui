@@ -103,7 +103,7 @@ The following components are required to effectively use this repository:
         <img src="./public/screenshots/8-c.png" alt="Image 8-c" width="400px"/>
         <img src="./public/screenshots/8-d.png" alt="Image 8-d" width="500px"/>  
 
-9.  **Push the modified repository**
+9.  **Push the modified code**
 
     1. Make sure you have saved the `.env`, `manifest.yml`, and `static_store.js` files
     2. In the CLI, login to IBM Cloud by running the command: `ibmcloud login`
@@ -139,7 +139,7 @@ The following components are required to effectively use this repository:
 
 ***
 
-## Code Base Information
+## Codebase Information
 
 ### System Requirements
 - [Installation of Node.js](https://nodejs.org/en/download/)
