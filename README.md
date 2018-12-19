@@ -56,9 +56,9 @@ The following components are required to effectively use this repository:
 5.  **Open the `watson-assistant-chatbot-ui` repository in your IDE or open a text editor if you are not using an IDE**
 6.  **Create a `.env` file**
 
-    1.  From your CLI, IDE or tet editor, create an `.env` file  
-        ***NOTE: If using a text editor, create a new file with the title `.env` and save it to the `/watson-assistant-chatbot-ui` directory. Files prefixed with a '.' will be hidden on most operating systems so don't be alarmed if you do not see the file you created. To toggle the visibility of hidden files on OSX, when viewing a directory in Finder, press `COMMAND` + `SHIFT` + `'.'` . 
-        [Follow the directions on this page to view hidden files in Windows](https://support.microsoft.com/en-us/help/4028316/windows-view-hidden-files-and-folders-in-windows-10)***    
+    1.  From your CLI, IDE or text editor, create an `.env` file  
+        ***NOTE: If using a text editor, create a new file with the title `.env` and save it to the `/watson-assistant-chatbot-ui` directory. Files prefixed with a `'.'` will be hidden on most operating systems so don't be alarmed if you do not see the file you created. To toggle the visibility of hidden files on OSX, when viewing a directory in Finder, press `COMMAND` + `SHIFT` + `'.'` [the period key]. 
+        [Follow the directions on this page to view hidden files in Windows](https://support.microsoft.com/en-us/help/4028316/windows-view-hidden-files-and-folders-in-windows-10).***    
     2.  Copy all of the variables from the `env.example` template into the new `.env` file  
         <img src="./public/screenshots/5-b.png" alt="Image 5-b" width="400px"/>
     3.  In your browser, navigate to your IBM Cloud account Dashboard by clicking on the IBM Cloud Link in the upper-left corner  
@@ -71,7 +71,7 @@ The following components are required to effectively use this repository:
         <img src="./public/screenshots/5-d.png" alt="Image 5-d" width="600px"/>
     7.  Copy the value of `apikey` to the `ASSISTANT_API_KEY` value in the `.env` file  
     8.  Copy the value of `url` to the `ASSISTANT_URL` value in the `.env` file  
-        <img src="./public/screenshots/5-e.png" alt="Image 5-e" width="600px"/>
+        <img src="./public/screenshots/5-e.png" alt="Image 5-e" width="700px"/>
         <img src="./public/screenshots/5-e-i.png" alt="Image 5-e-i" width="400px"/>  
         ***NOTE: Do not wrap any values in the `.env` file in quotes.***
     9.  Click 'Manage' in the upper-left of the page to navigate back to the Watson Assistant service dashboard  
@@ -116,7 +116,7 @@ The following components are required to effectively use this repository:
 
     1. Make sure you have saved the `.env`, `manifest.yml`, and `static_store.js` files
     2. In the CLI, login to IBM Cloud by running the command: `ibmcloud login`
-    3. If prompted to selected an account, select the account on which you created the Node.js Cloud Foundry App
+    3. If prompted to select an account, select the account on which you created the Node.js Cloud Foundry App
     4. Target the Organization and Space in which you created your Node.js Cloud Foundry App
         - `ibmcloud target -o {organization} -s {space}`
     5. From within this directory, run `ibmcloud app push {your-app-name}`, substituting `{your-app-name}` for the name of your app
@@ -124,7 +124,7 @@ The following components are required to effectively use this repository:
 
 10. **The chatbot app is now being deployed.**
 
-    - Once the deploy script has finished running, you can test that you have follow these instructions correctly by navigating to your app's route which you copied in [Step 8.iii](#step_8iii). You should see a blank page with a blue button in the bottom right that says 'Need Help?'. Click on this button to open the chat dialog and test out the Watson Assistant service.  
+    - Once the deploy script has finished running, you can test that you have followed these instructions correctly by navigating to your app's route which you copied in [Step 8.iii](#step_8iii). You should see a blank page with a blue button in the bottom right that says 'Need Help?'. Click on this button to open the chat dialog and test out the Watson Assistant service.  
 
         <img src="./public/screenshots/gif-1.gif" alt="Image gif-1" width="600px"/>  
 
