@@ -10,6 +10,7 @@ The following components are required to effectively use this repository:
 - A [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/) service instance
 - A target app or website into which the chatbot will be inserted
 - A Command Line Interface (CLI)
+- An installation of [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - An installation of the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/index.html#overview)
 - A text editor or Integrated Development Environment (IDE) e.g. [VS Code](https://code.visualstudio.com/)
 - An up-to-date version of [Firefox](https://www.mozilla.org/en-US/firefox/new/) or [Google Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAjwu5veBRBBEiwAFTqDwTggc345A8KxyUcNEmc1evvkxhRQDSb8WS-FLmDQUPOyqJZL-LCsrRoCVMQQAvD_BwE&gclsrc=aw.ds&dclid=CP7z2LWAjt4CFaO6swod1zsEsw)
@@ -52,12 +53,13 @@ The following components are required to effectively use this repository:
     - `git clone https://github.com/lukemccomb/watson-assistant-chatbot-ui.git`
 4.  **Navigate to the `watson-assistant-chatbot-ui` directory**
     - `cd watson-assistant-chatbot-ui`
-5.  **Open the `watson-assistant-chatbot-ui` repository in your IDE or text editor**
+5.  **Open the `watson-assistant-chatbot-ui` repository in your IDE or open a text editor if you are not using an IDE**
 6.  **Create a `.env` file**
 
-    1.  From your CLI or IDE, create an `.env` file  
-        <img src="./public/screenshots/5-a.png" alt="Image 5-a" width="600px"/>
-    2.  Copy all of the variables from the `.env.example` template into the new `.env` file
+    1.  From your CLI, IDE or tet editor, create an `.env` file  
+        ***NOTE: If using a text editor, create a new file with the title `.env` and save it to the `/watson-assistant-chatbot-ui` directory. Files prefixed with a '.' will be hidden on most operating systems so don't be alarmed if you do not see the file you created. To toggle the visibility of hidden files on OSX, when viewing a directory in Finder, press `COMMAND` + `SHIFT` + `'.'` . 
+        [Follow the directions on this page to view hidden files in Windows](https://support.microsoft.com/en-us/help/4028316/windows-view-hidden-files-and-folders-in-windows-10)***    
+    2.  Copy all of the variables from the `env.example` template into the new `.env` file  
         <img src="./public/screenshots/5-b.png" alt="Image 5-b" width="400px"/>
     3.  In your browser, navigate to the the Watson Assistant Service dashboard and click on 'Service credentials'  
         <img src="./public/screenshots/5-c.png" alt="Image 5-c" width="400px"/>
@@ -81,35 +83,37 @@ The following components are required to effectively use this repository:
         <img src="./public/screenshots/5-j.png" alt="Image 5-j" width="400px"/>
     13. Copy the 'Assistant ID' into the `ASSISTANT_ID` variable in the `.env` file  
         <img src="./public/screenshots/5-k.png" alt="Image 5-k" width="400px"/>  
-        <img src="./public/screenshots/5-l.png" alt="Image 5-l" width="400px"/>
+        <img src="./public/screenshots/5-l.png" alt="Image 5-l" width="400px"/>  
+    14. Save the `.env` file
 
 7.  **Update the `manifest.yml` file using your IDE or text editor**
 
-    1. In `manifest.yml`, change the `name` and `route` fields to match your app name which can be found on your IBM Cloud account dashboard  
+    1. In `manifest.yml`, change the `name` and `route` fields to match the name of your app you created in [Step 1.iii](#step_1-iii). This can be found on your IBM Cloud account dashboard  
         <img src="./public/screenshots/5-m.png" alt="Image 5-m" width="500px"/>
         <img src="./public/screenshots/5-n.png" alt="Image 5-n" width="400px"/>
     2. In `manifest.yml`, update the `services` list with the Watson Assistant service name which can also be found on your IBM Cloud account dashboard  
         <img src="./public/screenshots/5-o.png" alt="Image 5-o" width="400px"/>  
-        <img src="./public/screenshots/5-p.png" alt="Image 5-p" width="400px"/>
+        <img src="./public/screenshots/5-p.png" alt="Image 5-p" width="400px"/>  
+    3. Save the `manifest.yml` file
 
-8.  **Update the `static_store.js` file**
+8.  **Update the `static_store.js` file using your IDE or text editor**
 
-    1. In your browser, from you IBM Cloud account Dashboard, click on your Node.js Cloud Foundry App
+    1. In your browser, from your IBM Cloud account Dashboard, click on your Node.js Cloud Foundry App
         <img src="./public/screenshots/8-a.png" alt="Image 8-a" width="600px"/>
     2. Click the 'Visit App URL' link  
         <img src="./public/screenshots/8-b.png" alt="Image 8-b" width="600px"/>
     3. <a id="step_8iii">Copy the URL from the new tab that opens and paste it into the `DEV_HOST_URL` variable in `static_store.js`</a>  
-        ***NOTE: Make sure there is no trailing backslash at the end of the URL***  
+        ***NOTE: Make sure there is no trailing slash at the end of the URL***  
         <img src="./public/screenshots/8-c.png" alt="Image 8-c" width="400px"/>
         <img src="./public/screenshots/8-d.png" alt="Image 8-d" width="500px"/>  
+    4. Save the `static_store.js` file
 
 9.  **Push the modified code**
 
     1. Make sure you have saved the `.env`, `manifest.yml`, and `static_store.js` files
     2. In the CLI, login to IBM Cloud by running the command: `ibmcloud login`
-    3. Select the account on which you created the Node.js Cloud Foundry App
-    4. Target the Resource group, Organization and Space in which you created your Node.js Cloud Foundry App
-        - `imbcloud target -g {resource_group}`
+    3. If prompted to selected an account, select the account on which you created the Node.js Cloud Foundry App
+    4. Target the Organization and Space in which you created your Node.js Cloud Foundry App
         - `imbcloud target -o {organization}`
         - `imbcloud target -s {space}`
     5. From within this directory, run `ibmcloud app push {your-app-name}`, substituting `{your-app-name}` for the name of your app
