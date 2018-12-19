@@ -63,7 +63,7 @@ The following components are required to effectively use this repository:
         <img src="./public/screenshots/5-b.png" alt="Image 5-b" width="400px"/>
     3.  In your browser, navigate to your IBM Cloud account Dashboard by clicking on the IBM Cloud Link in the upper-left corner  
         <img src="./public/screenshots/5-b-i.png" alt="Image 5-b-i" width="400px"/>
-    4.  Navigate to the Watson Assistant Service dashboard by clicking on the target service in the 'Services' list on you account dashboard  
+    4.  Navigate to the Watson Assistant Service dashboard by clicking on the target service in the 'Services' list on your account dashboard  
         <img src="./public/screenshots/5-b-ii.png" alt="Image 5-b-ii" width="600px"/>
     5.  Click on 'Service credentials' in the left-hand menu  
         <img src="./public/screenshots/5-c.png" alt="Image 5-c" width="400px"/>
