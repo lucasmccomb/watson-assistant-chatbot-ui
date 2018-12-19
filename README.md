@@ -51,8 +51,8 @@ The following components are required to effectively use this repository:
 
 3.  **From your CLI, clone this repository onto your local machine:** 
     - `git clone https://github.com/lukemccomb/watson-assistant-chatbot-ui.git`
-4.  **Navigate to the `watson-assistant-chatbot-ui` directory**
-    - `cd watson-assistant-chatbot-ui`
+4.  **Navigate to the `watson-assistant-chatbot-ui` directory in your file system**
+    - From the CLI: `cd watson-assistant-chatbot-ui`
 5.  **Open the `watson-assistant-chatbot-ui` repository in your IDE or open a text editor if you are not using an IDE**
 6.  **Create a `.env` file**
 
@@ -61,30 +61,34 @@ The following components are required to effectively use this repository:
         [Follow the directions on this page to view hidden files in Windows](https://support.microsoft.com/en-us/help/4028316/windows-view-hidden-files-and-folders-in-windows-10)***    
     2.  Copy all of the variables from the `env.example` template into the new `.env` file  
         <img src="./public/screenshots/5-b.png" alt="Image 5-b" width="400px"/>
-    3.  In your browser, navigate to the the Watson Assistant Service dashboard and click on 'Service credentials'  
+    3.  In your browser, navigate to your IBM Cloud account Dashboard by clicking on the IBM Cloud Link in the upper-left corner  
+        <img src="./public/screenshots/5-b-i.png" alt="Image 5-b-i" width="400px"/>
+    4.  Navigate to the Watson Assistant Service dashboard by clicking on the target service in the 'Services' list on you account dashboard  
+        <img src="./public/screenshots/5-b-ii.png" alt="Image 5-b-ii" width="600px"/>
+    5.  Click on 'Service credentials' in the left-hand menu  
         <img src="./public/screenshots/5-c.png" alt="Image 5-c" width="400px"/>
-    4.  In the 'Service Credentials' list, click 'View credentials' on one of the listed credentials (it shouldn't matter which credential you choose).  
+    6.  In the 'Service Credentials' list, click 'View credentials' on one of the listed credentials (it shouldn't matter which credential you choose).  
         <img src="./public/screenshots/5-d.png" alt="Image 5-d" width="600px"/>
-    5.  Copy the value of `apikey` to the `ASSISTANT_API_KEY` value in the `.env` file  
-    6.  Copy the value of `url` to the `ASSISTANT_URL` value in the `.env` file  
+    7.  Copy the value of `apikey` to the `ASSISTANT_API_KEY` value in the `.env` file  
+    8.  Copy the value of `url` to the `ASSISTANT_URL` value in the `.env` file  
         <img src="./public/screenshots/5-e.png" alt="Image 5-e" width="600px"/>
         <img src="./public/screenshots/5-e-i.png" alt="Image 5-e-i" width="400px"/>  
         ***NOTE: Do not wrap any values in the `.env` file in quotes.***
-    7.  Click 'Manage' in the upper-left of the page to navigate back to the Watson Assistant service dashboard  
+    9.  Click 'Manage' in the upper-left of the page to navigate back to the Watson Assistant service dashboard  
         <img src="./public/screenshots/5-f.png" alt="Image 5-f" width="400px"/>
-    8.  Click the 'Launch tool' button  
+    10. Click the 'Launch tool' button  
         <img src="./public/screenshots/5-g.png" alt="Image 5-g" width="400px"/>
-    9.  A new browser tab will open displaying the IBM Watson Assistant tool
-    10. Click on the 'Assistants' tab  
+    11. A new browser tab will open displaying the IBM Watson Assistant tool
+    12. Click on the 'Assistants' tab  
         <img src="./public/screenshots/5-h.png" alt="Image 5-h" width="400px"/>
-    11. Find the Assistant you want to connect to the Node.js Cloud Foundry App and click on the vertical three-dot menu button on the right side of the tile  
+    13. Find the Assistant you want to connect to the Node.js Cloud Foundry App and click on the vertical three-dot menu button on the right side of the tile  
         <img src="./public/screenshots/5-i.png" alt="Image 5-i" width="600px"/>
-    12. Select 'View API Details'  
+    14. Select 'View API Details'  
         <img src="./public/screenshots/5-j.png" alt="Image 5-j" width="400px"/>
-    13. Copy the 'Assistant ID' into the `ASSISTANT_ID` variable in the `.env` file  
+    15. Copy the value of `Assistant ID` into the `ASSISTANT_ID` variable in the `.env` file  
         <img src="./public/screenshots/5-k.png" alt="Image 5-k" width="400px"/>  
         <img src="./public/screenshots/5-l.png" alt="Image 5-l" width="400px"/>  
-    14. Save the `.env` file
+    16. Save the `.env` file
 
 7.  **Update the `manifest.yml` file using your IDE or text editor**
 
