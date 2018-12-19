@@ -3,8 +3,8 @@ declared-services:
   assistant-prod:
     label: assistant
 applications:
-- name: Watson-Assistant-Node-React-Chatbot
-  route: Watson-Assistant-Node-React-Chatbot
+- name: watson-assistant-chatbot-ui
+  route: watson-assistant-chatbot-ui
   command: npm start
   path: .
   instances: 1

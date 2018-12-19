@@ -67,7 +67,7 @@ The following components are required to effectively use this repository:
         <img src="./public/screenshots/5-b-ii.png" alt="Image 5-b-ii" width="600px"/>
     5.  Click on 'Service credentials' in the left-hand menu  
         <img src="./public/screenshots/5-c.png" alt="Image 5-c" width="400px"/>
-    6.  In the 'Service Credentials' list, click 'View credentials' on one of the listed credentials (it shouldn't matter which credential you choose).  
+    6.  In the 'Service credentials' list, click 'View credentials' on one of the listed credentials (it shouldn't matter which credential you choose).  
         <img src="./public/screenshots/5-d.png" alt="Image 5-d" width="600px"/>
     7.  Copy the value of `apikey` to the `ASSISTANT_API_KEY` value in the `.env` file  
     8.  Copy the value of `url` to the `ASSISTANT_URL` value in the `.env` file  
@@ -92,7 +92,7 @@ The following components are required to effectively use this repository:
 
 7.  **Update the `manifest.yml` file using your IDE or text editor**
 
-    1. In `manifest.yml`, change the `name` and `route` fields to match the name of your app you created in [Step 1.iii](#step_1-iii). This can be found on your IBM Cloud account dashboard  
+    1. Open `manifest.yml` in your editor and change the `name` and `route` fields to match the name of your app you created in [Step 1.iii](#step_1-iii). This can be found on your IBM Cloud account dashboard  
         <img src="./public/screenshots/5-m.png" alt="Image 5-m" width="500px"/>
         <img src="./public/screenshots/5-n.png" alt="Image 5-n" width="400px"/>
     2. In `manifest.yml`, update the `services` list with the Watson Assistant service name which can also be found on your IBM Cloud account dashboard  
@@ -106,7 +106,7 @@ The following components are required to effectively use this repository:
         <img src="./public/screenshots/8-a.png" alt="Image 8-a" width="600px"/>
     2. Click the 'Visit App URL' link  
         <img src="./public/screenshots/8-b.png" alt="Image 8-b" width="600px"/>
-    3. <a id="step_8iii">Copy the URL from the new tab that opens and paste it into the `DEV_HOST_URL` variable in `static_store.js`</a>  
+    3. <a id="step_8iii">Open `static_store.js` and copy the URL from the new tab that opens and paste it into the `DEV_HOST_URL` variable in `static_store.js`</a>  
         ***NOTE: Make sure there is no trailing slash at the end of the URL***  
         <img src="./public/screenshots/8-c.png" alt="Image 8-c" width="400px"/>
         <img src="./public/screenshots/8-d.png" alt="Image 8-d" width="500px"/>  
@@ -118,8 +118,7 @@ The following components are required to effectively use this repository:
     2. In the CLI, login to IBM Cloud by running the command: `ibmcloud login`
     3. If prompted to selected an account, select the account on which you created the Node.js Cloud Foundry App
     4. Target the Organization and Space in which you created your Node.js Cloud Foundry App
-        - `imbcloud target -o {organization}`
-        - `imbcloud target -s {space}`
+        - `ibmcloud target -o {organization} -s {space}`
     5. From within this directory, run `ibmcloud app push {your-app-name}`, substituting `{your-app-name}` for the name of your app
         - e.g. `ibmcloud app push lem-assistant-chatbot`
 
