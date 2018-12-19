@@ -122,27 +122,27 @@ The following components are required to effectively use this repository:
     5. From within this directory, run `ibmcloud app push {your-app-name}`, substituting `{your-app-name}` for the name of your app
         - e.g. `ibmcloud app push lem-assistant-chatbot`
 
-10. **The chatbot app is now deployed.**
+10. **The chatbot app is now being deployed.**
 
-    - You can test this by navigating to your app's route which you copied in [Step 8.iii](#step_8iii). You should see a blank page with a blue button in the bottom right that says 'Need Help?'. Click on this button to open the chat dialog and test out the Watson Assistant service.  
+    - Once the deploy script has finished running, you can test that you have follow these instructions correctly by navigating to your app's route which you copied in [Step 8.iii](#step_8iii). You should see a blank page with a blue button in the bottom right that says 'Need Help?'. Click on this button to open the chat dialog and test out the Watson Assistant service.  
 
         <img src="./public/screenshots/gif-1.gif" alt="Image gif-1" width="600px"/>  
 
 11. **Add `<script>` tag into the target application within which the chatbot will exist**
 
-    1. Open the html file of the page you want to insert the script tag into
+    1. Open the HTML file of the page into which the script tag will be inserted. This will be the page where the blue button and dialog window will be displayed  
     2. Copy the following `<script>` tag and paste it below the end-tag of the `<body>` element:
         ```javascript
             <script data-main='chat_bot_app' src="{host}/chat_bot_app.js"></script>
         ```
     3. Change `{host}` in the `src` attribute to match your app's route which you copied in [Step 8.iii](#step_8iii)  
         
-        ***NOTE: Make sure there is only one backslash between your app's route and `chat_bot_app.js`***  
+        ***NOTE: Make sure there is only one slash between your app's route and `chat_bot_app.js`***  
         
         <img src="./public/screenshots/11-a.png" alt="Image 11-a" width="700px"/>  
     4. Save your changes and either run your app locally or deploy it to your cloud environment
 
-**Within your own application or website, you should now see a blue 'Need Help?' button in the bottom right corner of the page that you inserted the script tag into. When the button is clicked, a chat window should appear and you should be able to have a conversation with your Watson Assistant service. <a href="https://lem-assistant-demo-1.mybluemix.net/">Here is a working demo.</a>**
+**Within your own application or website, a blue 'Need Help?' button should be visible in the bottom-right corner of the page into which the script tag was inserted. When the button is clicked, a chat window should appear and you should be able to have a conversation with your Watson Assistant service. <a href="https://lem-assistant-demo-1.mybluemix.net/">Here is a working demo.</a>**
 
 ***
 
