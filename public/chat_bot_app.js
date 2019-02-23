@@ -1,8 +1,11 @@
+let assistantHostUrl, targetElement, assistantHost;
+
 // Gets the origin of this script from the hosting document
 for (i in document.scripts) {
     if (document.scripts[i].getAttribute('data-main') === 'chat_bot_app') {
-        var assistantHostUrl = document.scripts[i].src;
-        var assistantHost = assistantHostUrl.replace(/(\/\/.*?\/).*/g, '$1').slice(0, -1);
+        assistantHostUrl = document.scripts[i].src;
+        targetElement = document.scripts[i].getAttribute('data-target-elem-id') || 'body'; 
+        assistantHost = assistantHostUrl.replace(/(\/\/.*?\/).*/g, '$1').slice(0, -1);
         break;
     }
 }
@@ -56,13 +59,13 @@ let elemDictionary = {
 
 // Element builder function
 const createElem = (elemObj, document, elemDictionary) => {
-    var currElem = document.createElement(elemObj.type);
+    let currElem = document.createElement(elemObj.type);
 
     // Checks if element has attributes to be added
     if(!!elemObj.attrs && elemObj.attrs.length > 0) {
         elemObj.attrs.forEach(function(attr) {
             if(Array.isArray(attr.val)) {
-                var completeVal = attr.val.join(' ');
+                let completeVal = attr.val.join(' ');
                 currElem.setAttribute(attr.name, completeVal);
             } else if(typeof attr.val === 'string') {
                 currElem.setAttribute(attr.name, attr.val)
@@ -85,6 +88,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Appends new elements to DOM
     document.body.appendChild(elemDictionary.bundleScript.cloneNode(true));
-    document.body.appendChild(elemDictionary.chatWrap.cloneNode(true));
+    if(targetElement === 'body') {
+        document.body.appendChild(elemDictionary.chatWrap.cloneNode(true));
+    } else {
+        document.getElementById(targetElement).appendChild(elemDictionary.chatWrap.cloneNode(true));
+    }
     document.head.appendChild(elemDictionary.styleSheetLink.cloneNode(true));
 });
