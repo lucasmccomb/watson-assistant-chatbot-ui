@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 const {DEV_HOST_URL, LOCAL_HOST_URL} = require('../../static_store');
 
-class ChatBotHeader extends Component {
+class ChatHeader extends Component {
 
     constructor(props, context) {
         super(props, context);
@@ -62,4 +62,4 @@ class ChatBotHeader extends Component {
     }
 }
 
-export default ChatBotHeader;
+export default ChatHeader;

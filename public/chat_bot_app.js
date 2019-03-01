@@ -27,7 +27,7 @@ const elemList = [
         name: 'bundleScript',
         type: 'script',
         attrs: [
-            {name: 'src', val: assistantHost +  '/bundle.js'}
+            {name: 'src', val: assistantHost +  '/dist/bundle.js'}
         ]
     },{
         name: 'chatWrap',
@@ -45,7 +45,7 @@ const elemList = [
         attrs: [
             {name: 'rel', val: 'stylesheet'},
             {name: 'type', val: 'text/css'},
-            {name: 'href', val: assistantHost + '/chat_bot_styles.css'}
+            {name: 'href', val: assistantHost + '/dist/styles.css'}
         ]
     }
 ];

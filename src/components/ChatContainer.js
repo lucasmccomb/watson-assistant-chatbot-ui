@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
-import ChatBotInitBtn from './chatBot_initBtn'
-import ChatBotWindow from './chatBot_window'
+import InitBtn from './InitBtn'
+import ChatBotWindow from './ChatWindow'
 
 class ChatBotContainer extends Component {
 
@@ -25,7 +25,7 @@ class ChatBotContainer extends Component {
                 chatWindowVisible ? 
                     <ChatBotWindow toggleChatWindow={this.toggleChatWindow.bind(this)} />
                 :
-                    <ChatBotInitBtn toggleChatWindow={this.toggleChatWindow.bind(this)} />
+                    <InitBtn toggleChatWindow={this.toggleChatWindow.bind(this)} />
             }
         </div>
     }

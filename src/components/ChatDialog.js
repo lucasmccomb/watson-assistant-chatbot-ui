@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 
-import BotMsg from './chatBot_botMsg';
-import UserMsg from './chatBot_userMsg';
-import MsgLoader from './chatBot_msgLoader';
+import BotMsg from './BotMsg';
+import UserMsg from './UserMsg';
+import MsgLoader from './MsgLoader';
 
-class ChatBotDialog extends Component {
+class ChatDialog extends Component {
 
     constructor(props, context) {
         super(props, context);
@@ -39,4 +39,4 @@ class ChatBotDialog extends Component {
     }
 }
 
-export default ChatBotDialog;
+export default ChatDialog;

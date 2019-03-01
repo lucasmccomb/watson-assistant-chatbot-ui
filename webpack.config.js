@@ -1,16 +1,35 @@
-const webpack = require('webpack');
+const path = require('path');
+const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: ['./src/index.js'],
+    output: {
+        path: path.join(__dirname, 'public', 'dist'),
+        publicPath: '/dist/',
+        filename: 'bundle.js'
+    },
+    plugins: [
+        new MiniCSSExtractPlugin({
+            filename: 'styles.css'
+        })
+    ],
     module: {
         rules: [
             {
+                loader: 'babel-loader',
                 test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                use: ['babel-loader']
+                exclude: /node_modules/
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
+                test: /\.s?css$/,
+                use: [
+                    MiniCSSExtractPlugin.loader,
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
+                test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
                     {
                         loader: 'file-loader',
@@ -23,26 +42,10 @@ module.exports = {
             }
         ]
     },
-    resolve: {
-        extensions: ['*', '.js', '.jsx']
-    },
-    node: {
-        console: false,
-        fs: 'empty',
-        net: 'empty',
-        tls: 'empty'
-    },
-    output: {
-        path: __dirname + '/public',
-        publicPath: '/',
-        filename: 'bundle.js'
-    },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ],
     devServer: {
-        contentBase: './public',
-        hot: true,
-        port: 3001
+        contentBase: path.join(__dirname, 'public'),
+        historyApiFallback: true,
+        publicPath: '/dist/',
+        port: '4001'
     }
 };

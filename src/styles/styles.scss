@@ -381,13 +381,16 @@
 }
 
 .talkbubble {
-    width: 80px;
-    height: 80px;
-    background: #3a87d1;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
+    background: #3a87d1;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 200;
+    height: 80px;
+    width: 80px;
 }
+
 .talkbubble:before {
     content: "";
     position: absolute;
@@ -400,7 +403,6 @@
     border-bottom: 13px solid transparent;
     transform: rotate(45deg);
 }
-
 
 .chtBot_anim8--type span {
     -webkit-animation-name: chtBot_kyFrm_blink;

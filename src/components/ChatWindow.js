@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import * as Scroll from 'react-scroll'
 
-import ChatBotHeader from './chatBot_header';
-import ChatBotDialog from './chatBot_dialog';
-import ChatBotUserInput from './chatBot_userInput';
+import ChatHeader from './ChatHeader';
+import ChatDialog from './ChatDialog';
+import ChatInput from './ChatInput';
 const {DEV_HOST_URL, LOCAL_HOST_URL} = require('../../static_store');
 
 const scroller = Scroll.scroller;
@@ -109,9 +109,9 @@ class ChatBotWindow extends Component {
         ];
 
         return <div id="dialog_wrap" className={dialogWrapClasses.join(' ')}>
-            <ChatBotHeader toggleChatWindow={() => this.props.toggleChatWindow()} />
-            <ChatBotDialog chatMsgs={chatMsgs} showLoader={showLoader}/>
-            <ChatBotUserInput handleUserMessage={this.handleUserMessage.bind(this)} />
+            <ChatHeader toggleChatWindow={() => this.props.toggleChatWindow()} />
+            <ChatDialog chatMsgs={chatMsgs} showLoader={showLoader}/>
+            <ChatInput handleUserMessage={this.handleUserMessage.bind(this)} />
         </div>
     }
 }
