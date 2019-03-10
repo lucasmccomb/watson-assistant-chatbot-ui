@@ -1,0 +1,635 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/* 
+    - All CSS classes have the prefix with 'chtBot_' denoting that they pertain solely to the Chat Dialog Window
+    - CSS is implemented Atomically to reduce complexity (https://css-tricks.com/lets-define-exactly-atomic-css/)
+*/
+/* Lines 4-47 create the ellipsis animation when the Bot is thinking/working/REST calls are happening */
+@-webkit-keyframes chtBot_kyFrm_blink {
+  0% {
+    opacity: .2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: .2; } }
+
+@keyframes chtBot_kyFrm_blink {
+  0% {
+    opacity: .2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: .2; } }
+
+.chtBot_bgClr--white {
+  background-color: #FFFFFF; }
+
+.chtBot_bgClr--lghtCyan {
+  background-color: #00bcd482; }
+
+.chtBot_bgClr--lghtBlue {
+  background-color: #C2E5FF; }
+
+.chtBot_bottom-10--right-10 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px; }
+
+.chtBot_fxd--btm-15px_rgt-15px {
+  position: fixed;
+  bottom: 15px;
+  right: 15px; }
+
+.chtBot_brdr--none {
+  border: none; }
+
+.chtBot_brdrAll--1px {
+  border-width: 1px; }
+
+.chtBot_brdrClr--lghtGray {
+  border-color: #cccccc; }
+
+.chtBot_brdrRdAll--3px {
+  border-radius: 3px; }
+
+.chtBot_brdrRdAll--10px {
+  border-radius: 10px; }
+
+.chtBot_brdrRdTpLft--10px {
+  border-top-left-radius: 10px; }
+
+.chtBot_brdrRdTpRght--10px {
+  border-top-right-radius: 10px; }
+
+.chtBot_brdrRdBtmLft--10px {
+  border-bottom-left-radius: 10px; }
+
+.chtBot_brdrRdBtmRght--10px {
+  border-bottom-right-radius: 10px; }
+
+.chtBot_brdrRdTpLft--15px {
+  border-top-left-radius: 15px; }
+
+.chtBot_brdrRdTpRght--15px {
+  border-top-right-radius: 15px; }
+
+.chtBot_brdrRdBtmRght--15px {
+  border-bottom-right-radius: 15px; }
+
+.chtBot_brdrRdBtmLft--15px {
+  border-bottom-left-radius: 15px; }
+
+.chtBot_brdrStyl--solid {
+  border-style: solid; }
+
+.chtBot_brdrBtm--1px {
+  border-width: 0 0 1px 0; }
+
+.chtBot_brdrTp--1px {
+  border-width: 1px 0 0 0; }
+
+.chtBot_crsr--pointr {
+  cursor: pointer; }
+
+.chtBot_dsply--block {
+  display: block; }
+
+.chtBot_dsply--in-block {
+  display: inline-block; }
+
+.chtBot_flt--left {
+  float: left; }
+
+.chtBot_flt--right {
+  float: right; }
+
+.chtBot_fntFm--sanSer {
+  font-family: sans-serif, Arial; }
+
+.chtBot_fntSz--9px {
+  font-size: 9px; }
+
+.chtBot_fntSz--12px {
+  font-size: 12px; }
+
+.chtBot_fntSz--18px {
+  font-size: 18px; }
+
+.chtBot_hght--50px {
+  height: 50px; }
+
+.chtBot_hght--90px {
+  height: 90px; }
+
+.chtBot_hght--70px {
+  height: 70px; }
+
+.chtBot_hght--275px {
+  height: 275px; }
+
+.chtBot_hght--478px {
+  height: 478px; }
+
+.chtBot_hght--100per {
+  height: 100%; }
+
+.chtBot_lineHght--1pt5 {
+  line-height: 1.5; }
+
+.chtBot_mrgnAll--2per {
+  margin: 2%; }
+
+.chtBot_mrgnAll--3px {
+  margin: 3px; }
+
+.chtBot_mrgnAll--3per {
+  margin: 3%; }
+
+.chtBot_mrgLft--25per {
+  margin-left: 25%; }
+
+.chtBot_mrgnRght--4per {
+  margin-right: 4%; }
+
+.chtBot_mrgnRght--25per {
+  margin-right: 25%; }
+
+.chtBot_mrgnTp--12px {
+  margin-top: 12px !important; }
+
+.chtBot_mrgnTp--90px {
+  margin-top: 90px !important; }
+
+.chtBot_mxWdth--85per {
+  max-width: 85%; }
+
+.chtBot_mxWdth--100per {
+  max-width: 100%;
+  width: auto; }
+
+.chtBot_ovrflwWrap--break {
+  overflow-wrap: break-word; }
+
+.chtBot_ovrflwY--scroll {
+  overflow-y: scroll; }
+
+.chtBot_pddAll--0 {
+  padding: 0; }
+
+.chtBot_pddTp--11px {
+  padding-top: 11px; }
+
+.chtBot_pddAll--2per {
+  padding: 2%; }
+
+.chtBot_pddAll--5px {
+  padding: 5px; }
+
+.chtBot_pddAll--15px {
+  padding: 15px; }
+
+.chtBot_pddLft--15px {
+  padding-left: 15px; }
+
+.chtBot_pddRgt--15px {
+  padding-right: 15px; }
+
+.chtBot_pddTp--10px {
+  padding-top: 10px; }
+
+.chtBot_pddBtm--5px {
+  padding-bottom: 5px; }
+
+.chtBot_pddBtm--15px {
+  padding-bottom: 15px; }
+
+.chtBot_resz--none {
+  resize: none; }
+
+.chtBot_right--10px {
+  position: absolute;
+  right: 10px; }
+
+.chtBot_txtAlgn--center {
+  text-align: center; }
+
+.chtBot_txtAlgn--left {
+  text-align: left; }
+
+.chtBot_txtAlgn--right {
+  text-align: right; }
+
+.chtBot_txtClr--gray {
+  color: #aeaeae; }
+
+.chtBot_txtClr--black {
+  color: #000000; }
+
+.chtBot_txtClr--blue {
+  color: #3a87d1; }
+
+.chtBot_txtClr--white {
+  color: #FFFFFF; }
+
+.chtBot_top--0 {
+  position: absolute;
+  top: 0; }
+
+.chtBot_top--10px {
+  position: absolute;
+  top: 10px; }
+
+.chtBot_wdth--35px {
+  width: 35px; }
+
+.chtBot_wdth--90px {
+  width: 90px; }
+
+.chtBot_wdth--310px {
+  width: 310px; }
+
+.chtBot_wdth--340px {
+  width: 340px; }
+
+.chtBot_wdth--90per {
+  width: 90%; }
+
+.chtBot_wdth--100per {
+  width: 100%; }
+
+.chtBot_boxShdw--blue {
+  box-shadow: 0 2px 40px 0 rgba(43, 132, 210, 0.41); }
+
+.chtBot_closeBtn {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden; }
+
+.chtBot_closeBtn:hover::before, .chtBot_closeBtn:hover::after {
+  background: blue; }
+
+.chtBot_closeBtn::before, .chtBot_closeBtn::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  background: #5e5e5e; }
+
+.chtBot_closeBtn::before {
+  transform: rotate(45deg); }
+
+.chtBot_closeBtn::after {
+  transform: rotate(-45deg); }
+
+.chtBot_txtArea_noGlow {
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+.talkbubble {
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #3a87d1;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 200;
+  height: 80px;
+  width: 80px; }
+
+.talkbubble:before {
+  content: "";
+  position: absolute;
+  left: 75%;
+  top: 60px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 26px solid #3a87d1;
+  border-bottom: 13px solid transparent;
+  transform: rotate(45deg); }
+
+.chtBot_anim8--type span {
+  -webkit-animation-name: chtBot_kyFrm_blink;
+  animation-name: chtBot_kyFrm_blink;
+  -webkit-animation-duration: 1.4s;
+  animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.chtBot_anim8--type span:nth-child(2) {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s; }
+
+.chtBot_anim8--type span:nth-child(3) {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s; }
+
